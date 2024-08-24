@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Billar</title>
+    <link rel="stylesheet" href="Billar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BILLAR LAS HUERTAS</h1>
+        <table id="billarTable">
+            <thead>
+                <tr>
+                    <th>Mesa</th>
+                    <th>Hora de Inicio</th>
+                    <th>Hora Final</th>
+                    <th>Total Horas Jugadas</th>
+                    <th>Precio por Hora</th>
+                    <th>Precio a Pagar</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mesa 1</td>
+                    <td><input type="time" id="horaInicio1"></td>
+                    <td><input type="time" id="horaFinal1"></td>
+                    <td><input type="text" id="totalHoras1" readonly></td>
+                    <td><input type="number" id="precioHora1" value="30"></td>
+                    <td><input type="text" id="precioPagar1" readonly></td>
+                    <td><button onclick="calcularPrecio(1)">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>Mesa 2</td>
+                    <td><input type="time" id="horaInicio2"></td>
+                    <td><input type="time" id="horaFinal2"></td>
+                    <td><input type="text" id="totalHoras2" readonly></td>
+                    <td><input type="number" id="precioHora2" value="30"></td>
+                    <td><input type="text" id="precioPagar2" readonly></td>
+                    <td><button onclick="calcularPrecio(2)">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>Mesa 3</td>
+                    <td><input type="time" id="horaInicio3"></td>
+                    <td><input type="time" id="horaFinal3"></td>
+                    <td><input type="text" id="totalHoras3" readonly></td>
+                    <td><input type="number" id="precioHora3" value="30"></td>
+                    <td><input type="text" id="precioPagar3" readonly></td>
+                    <td><button onclick="calcularPrecio(3)">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>Mesa 4</td>
+                    <td><input type="time" id="horaInicio4"></td>
+                    <td><input type="time" id="horaFinal4"></td>
+                    <td><input type="text" id="totalHoras4" readonly></td>
+                    <td><input type="number" id="precioHora4" value="30"></td>
+                    <td><input type="text" id="precioPagar4" readonly></td>
+                    <td><button onclick="calcularPrecio(4)">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>Mesa 5</td>
+                    <td><input type="time" id="horaInicio5"></td>
+                    <td><input type="time" id="horaFinal5"></td>
+                    <td><input type="text" id="totalHoras5" readonly></td>
+                    <td><input type="number" id="precioHora5" value="30"></td>
+                    <td><input type="text" id="precioPagar5" readonly></td>
+                    <td><button onclick="calcularPrecio(5)">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>Mesa 6</td>
+                    <td><input type="time" id="horaInicio6"></td>
+                    <td><input type="time" id="horaFinal6"></td>
+                    <td><input type="text" id="totalHoras6" readonly></td>
+                    <td><input type="number" id="precioHora6" value="30"></td>
+                    <td><input type="text" id="precioPagar6" readonly></td>
+                    <td><button onclick="calcularPrecio(6)">Calcular</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Billar.js"></script>
+</body>
+</html>

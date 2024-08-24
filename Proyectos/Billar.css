@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Billar.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%; /* Mantiene el ancho de la tabla al 100% del contenedor */
+    border-collapse: collapse;
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    color: #ffffff;
+}
+
+th {
+    background-color: #333333;
+}
+
+td input[type="time"],
+td input[type="number"],
+td input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333333;
+    text-align: center;
+}
+
+td input[type="text"][readonly] {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Consultas de medios para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+        background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    }
+
+    .container {
+        width: 95%; /* Aumenta el ancho del contenedor en pantallas pequeñas */
+        margin: 20px auto; /* Reduce el margen superior e inferior */
+        padding: 10px; /* Reduce el padding */
+        text-align: center; /* Centra el contenido del contenedor */
+    }
+
+    table {
+        width: 100%; /* Asegura que la tabla ocupe el 100% del contenedor */
+        margin: 0 auto; /* Centra la tabla horizontalmente */
+        text-align: center; /* Centra el contenido del contenedor */
+
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ajusta el tamaño de la fuente del título */
+    }
+
+    th, td {
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente de las celdas */
+    }
+
+    button {
+        width: 100%; /* Botones de ancho completo en pantallas pequeñas */
+    }
+}
